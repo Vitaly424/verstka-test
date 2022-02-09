@@ -1,0 +1,96 @@
+*,
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh; /* sticky footer */
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh; /* sticky footer */
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
+
+  font-family: $font-family-primary;
+  font-weight: 400;
+  color: #000;
+
+  //text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  & > * {
+     flex-shrink: 0; /* sticky footer */
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-body {
+  overflow: hidden;
+}
+
+/* Grid styles */
+
+.container {
+  position: relative;
+
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Utility */
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  margin-left: -10000px;
+  background: transparent;
+  font-size: 0;
+}
+ 

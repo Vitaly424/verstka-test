@@ -1,0 +1,47 @@
+.apparatus {
+   padding: 200px 0 200px 0;
+
+   @include tablet {
+      padding: 50px 0 50px 0;
+   }
+
+   &__image {
+      position: absolute;
+      left: -50px;
+      top: -245px;
+
+      @include small-desktop {
+         left: -50px;
+         top: -102px;
+
+         img {
+            max-width: 400px;
+         }
+      }
+
+      @include tablet {
+         position: static;
+         margin: 0 0 20px 0;
+
+         text-align: center;
+      }
+   }
+
+   &__title {
+      max-width: 850px;
+      margin-left: auto;
+
+      position: relative;
+      z-index: 10;
+
+      @include big-desktop {
+         max-width: 636px;
+      }
+
+      @include tablet {
+         margin: 0 auto;
+         text-align: center;
+         font-size: 18px;
+      }
+   }
+}

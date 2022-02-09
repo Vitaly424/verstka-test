@@ -1,0 +1,22 @@
+.decorative {
+   position: absolute;
+
+   &--saving {
+      top: -73px;
+      left: -213px;
+   }
+
+   &--saving2 {
+      right: -197px;
+      bottom: -265px;
+   }
+
+   &--apparatus {
+      right: -197px;
+      bottom: -265px;
+   }
+   
+   @include tablet {
+      display: none;
+   }
+}

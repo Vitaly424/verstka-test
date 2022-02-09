@@ -1,0 +1,77 @@
+.complexion {
+   position: relative;
+   padding: 100px 0 100px 0;
+
+   @include tablet {
+      padding: 50px 0 50px 0;
+   }
+
+   &__title {
+      margin: 0 0 65px 0;
+      max-width: 807px;
+
+      @include big-desktop {
+         max-width: 595px;
+      }
+
+      @include tablet {
+         margin: 0 0 20px 0;
+      }
+   }
+
+   &__checkbox {
+      position: relative;
+      top: 4px;
+
+      flex-shrink: 0;
+      margin: 0 25px 0 0;
+
+      @include small-tablet {
+         margin: 0 10px 0 0;
+      }
+   }
+
+   &__list {
+      @include tablet {
+         margin: 0 0 20px 0;
+      }
+   }
+
+   &__item {
+      display: flex;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+         margin: 0 0 10px 0;
+      }
+   }
+
+   &__text {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #000000;
+
+      @include small-desktop {
+         font-size: 18px;
+      }
+   }
+
+   &__image {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+
+      @include big-desktop {
+         img {
+            max-width: 500px;
+            width: 100%;
+         }
+      }
+
+      @include tablet {
+         position: static;
+      }
+   }
+}

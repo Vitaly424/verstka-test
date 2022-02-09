@@ -1,0 +1,20 @@
+/* stylelint-disable */
+@function rem($pixels, $context: 16) {
+  @return calc($pixels / $context) + rem;
+}
+
+@mixin hover() {
+  @media screen and (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin focus() {
+  @media screen and (hover: hover) {
+    &:focus {
+      @content;
+    }
+  }
+}

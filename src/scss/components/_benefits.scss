@@ -1,0 +1,53 @@
+.benefits {
+   padding: 100px 0 100px 0;
+
+   @include tablet {
+      padding: 50px 0 50px 0;
+   }
+
+   &__list {
+      max-width: 1247px;
+      margin: 0 auto;
+   }
+
+   &__title {
+      max-width: 800px;
+      margin: 0 auto 80px;
+
+      @include tablet {
+         margin: 0 auto 20px;
+      }
+   }
+
+   &__checkbox {
+      position: relative;
+      top: 4px;
+
+      flex-shrink: 0;
+      margin: 0 25px 0 0;
+
+      @include small-tablet {
+         margin: 0 10px 0 0;
+      }
+   }
+
+   &__item {
+      display: flex;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+         margin: 0 0 10px 0;
+      }
+   }
+
+   &__text {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #000000;
+
+      @include tablet {
+         font-size: 18px;
+      }
+   }
+}

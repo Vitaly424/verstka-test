@@ -1,0 +1,42 @@
+.saving {
+   padding: 100px 0 100px 0;
+
+   @include tablet {
+      padding: 50px 0 50px 0;
+   }
+   
+   &__title {
+      position: relative;
+      z-index: 10;
+      margin: 0 0 28px 0;
+
+      @include tablet {
+         margin: 0 0 10px 0;
+      }
+   }
+
+   &__subtitle {
+      position: relative;
+      z-index: 10;
+      margin:  0 0 44px 0;
+
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #000000;
+      text-align: center;
+
+      @include tablet {
+         font-size: 18px;
+         margin:  0 0 20px 0;
+      }
+   }
+
+   &__packages {
+      .saving-package {
+         &:not(:last-child) {
+            margin: 0 0 34px 0;
+         }
+      }
+   }
+}
